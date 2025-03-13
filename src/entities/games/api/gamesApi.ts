@@ -5,6 +5,7 @@ export interface Game {
   name: string;
   description: string;
   image: string;
+  size: string;
 }
 
 export const gamesApi = api.injectEndpoints({
