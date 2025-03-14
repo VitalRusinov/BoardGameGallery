@@ -18,30 +18,32 @@ header {
 
     .label_anchor {
       height: 100%;
-      gap: 2vw;
+      gap: 1vw;
 
       img {
         height: 100%;
       }
 
       .label_name {
+
         p {
+          align-self: center;
           font-family: 'PaluiSP';
           font-weight: 900;
           color: var(--white-text-color);
         }
-
       }
     }
 
 
   }
 
-  .schedule {
+  .gallery {
     flex: 1;
     justify-content: center;
     align-items: center;
 
+    font-size: 2em;
     color: var(--white-text-color);
   }
 }
