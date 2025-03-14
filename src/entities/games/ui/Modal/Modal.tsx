@@ -22,8 +22,22 @@ export const Modal: FC<ModalProps> = ({ game, onClose }) => {
         <img src={game.image} alt={game.name} className="modal__image" />
       </div>
       <div className="modal__description">
-        <div className="modal__description_title">{game.name}</div>
-        <div className="modal__description_description">{game.description}</div>
+        <div className="parameters">
+          <div className="parametr">
+            <img src="/svg/players.svg" alt="players" />
+            <span>{ '- 4' }</span>
+          </div>
+          <div className="parametr">
+            <img src="/svg/watch.svg" alt="watch" />
+            <span>{ '- 60мин' }</span>
+          </div>
+          <div className="parametr">
+            <img src="/svg/age.svg" alt="age" />
+            <span>{ '- 10' }</span>
+          </div>
+        </div>
+        <h1>{game.name}</h1>
+        <p>{game.description}</p>
       </div>
     </div>
   );

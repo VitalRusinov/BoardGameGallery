@@ -12,12 +12,11 @@ html,
 }
 
 body {
-  overflow: scroll; /* Чтобы прокрутка оставалась доступной */
+  overflow: scroll;
 }
 
-/* Для WebKit-браузеров */
 body::-webkit-scrollbar {
-  display: none; /* Скрывает полосы прокрутки */
+  display: none;
 }
 
 ol,
