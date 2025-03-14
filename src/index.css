@@ -5,14 +5,19 @@ html,
   width: 100%;
 }
 
-body {
-  padding: 0 0.5rem;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  overflow: scroll; /* Чтобы прокрутка оставалась доступной */
+}
+
+/* Для WebKit-браузеров */
+body::-webkit-scrollbar {
+  display: none; /* Скрывает полосы прокрутки */
 }
 
 ol,

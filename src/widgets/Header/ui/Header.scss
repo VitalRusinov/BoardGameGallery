@@ -1,0 +1,49 @@
+header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--primary-bg-color);
+  padding: 5px 3vw;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 5px 10px var(--primary-bg-color);
+
+  border-bottom: 2px solid var(--yellow);
+
+
+  .label {
+    height: 100%;
+
+    .label_anchor {
+      height: 100%;
+      gap: 2vw;
+
+      img {
+        height: 100%;
+      }
+
+      .label_name {
+        p {
+          color: var(--white-text-color);
+        }
+
+      }
+    }
+
+
+  }
+
+  .schedule {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--white-text-color);
+  }
+}
+
+.flex {
+  display: flex;
+}

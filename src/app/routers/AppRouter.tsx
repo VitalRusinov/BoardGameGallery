@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { pagesPaths } from 'shared/paths';
-import { GalleryPage } from 'pages/gallery';
+import { GalleryPage } from 'pages/GalleryPage';
 
 export const AppRouter = () => {
   return (

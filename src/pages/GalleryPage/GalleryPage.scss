@@ -1,0 +1,12 @@
+.gallery-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--header-height) 0 0 0;
+
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  // align-items: center; /* Центрирование по вертикали */
+
+  background-color: var(--primary-bg-color);
+
+}

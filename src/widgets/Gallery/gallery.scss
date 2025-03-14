@@ -1,10 +1,11 @@
 .gallery {
+  width: 100%;
+  padding: 2vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px); /* Автоматическое количество колонок */
+  grid-template-columns: repeat(auto-fill, minmax(calc(50px + 5vw), 1fr)); /* Автоматическое количество колонок */
   grid-gap: 16px;
-  padding: 16px;
 
-  grid-auto-rows: 300px; /* Высота строк фиксированная */
-  grid-auto-columns: 300px; /* Ширина столбцов фиксированная */
-
+  grid-auto-rows: calc(50px + 5vw); /* Высота строк фиксированная */
+  // grid-auto-columns: calc(50px + 10vw); /* Ширина столбцов фиксированная */
+  // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматическое количество колонок с минимальной шириной */
 }
