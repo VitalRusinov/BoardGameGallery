@@ -12,7 +12,7 @@ export const Header = () => {
         </a>
       </div>
       <div className="gallery flex">
-        Список игр
+        Галерея
       </div>
     </header>
   )
