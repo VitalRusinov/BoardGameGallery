@@ -1,14 +1,10 @@
 import { FC } from 'react';
 import './modal.scss';
+import { Game } from 'entities/games/api/gamesApi';
+import { getPlayers } from './mod/getPlayers';
 
 interface ModalProps {
-  game: {
-    id: number;
-    name: string;
-    description: string;
-    image: string;
-    size: string;
-  };
+  game: Game;
   onClose: () => void;
 }
 
@@ -25,15 +21,15 @@ export const Modal: FC<ModalProps> = ({ game, onClose }) => {
         <div className="parameters">
           <div className="parametr">
             <img src="/svg/players.svg" alt="players" />
-            <span>{ '- 4' }</span>
+            <span>{getPlayers(game)}</span>
           </div>
           <div className="parametr">
             <img src="/svg/watch.svg" alt="watch" />
-            <span>{ '- 60мин' }</span>
+            <span>{`${game.playTime} мин`}</span>
           </div>
           <div className="parametr">
             <img src="/svg/age.svg" alt="age" />
-            <span>{ '- 10' }</span>
+            <span>{`${game.minAge} +`}</span>
           </div>
         </div>
         <h1>{game.name}</h1>
